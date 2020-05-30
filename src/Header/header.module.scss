@@ -1,0 +1,14 @@
+.header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //position: fixed;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  z-index: 20;
+  background-color: white;
+  padding: 0 16px;
+}

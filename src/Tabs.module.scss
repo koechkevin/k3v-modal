@@ -1,0 +1,31 @@
+@import "./App.module.scss";
+.head {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  overflow-x: scroll;
+
+  .button {
+    border: none;
+    padding: 8px;
+    flex: 1;
+    outline: none;
+    cursor: pointer;
+    max-width: 136px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: inherit;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba($color: #0050c8, $alpha: 0.1);
+    }
+    @extend .appButton;
+  }
+  .active {
+    border-bottom: 2px solid #0050c8;
+    color: #0050c8;
+  }
+}
+
+.body {
+  padding: 16px;
+}

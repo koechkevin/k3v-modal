@@ -1,0 +1,28 @@
+@import "./../App.module.scss";
+.drawer {
+  box-shadow: 0 2px 1px -1px rgba($color: #000, $alpha: 0.4), 0px 1px 1px 0px rgba($color: #000, $alpha: 0.3),
+  0px 1px 3px 0px rgba($color: #000, $alpha: 0.4);
+  position: fixed;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #00152a;
+  color: white;
+  transition: all .2s linear;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .head {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close {
+    background-color: transparent;
+    color: white;
+    margin-top: 0;
+    margin-right: 0;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
