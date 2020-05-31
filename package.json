@@ -11,7 +11,7 @@
     }
   },
   "name": "k3v-modal",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -31,7 +31,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:dev": "react-scripts start",
+    "start": "ts-node --project tsconfig.lib.json server.ts",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",

@@ -1,3 +1,4 @@
+// @ts-ignore
 import express, { Express, static as staticServe, Response, Request } from 'express';
 import { createServer, Server } from 'http';
 // @ts-ignore
