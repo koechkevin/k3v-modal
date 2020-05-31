@@ -46,12 +46,14 @@ const WhatsappStatusView: FC<Props> = (props) => {
         </button>
       )}
       <div className={classes.view}>
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', justifyContent: 'center',}}>
+        <div style={{ display: 'flex', justifyContent: 'center', width: 352,}}>
           {content.map((each: string, index: number) => (
             <div className={[classes.loader, index < current ? classes.viewed : ''].join(' ')} key={index}>
               {index === current && <div className={classes.viewed} style={{ width: `${width}%` }} />}
             </div>
           ))}
+        </div>
         </div>
         <div className={classes.image}>
           <img style={{ maxHeight: '96%', maxWidth: '96%' }} alt="" src={content[current]} />

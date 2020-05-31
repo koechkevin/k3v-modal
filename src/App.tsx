@@ -9,8 +9,9 @@ import WhatsappStatusView from './WhatsappStatusView/WhatsappStatusView';
 
 
 const contents = [
-  'https://pbs.twimg.com/media/EZWj1bfXQAMuOMA?format=jpg&name=medium',
+  'https://pbs.twimg.com/media/EZVQ63ZXYAASwjG?format=jpg&name=large',
   'https://pbs.twimg.com/semantic_core_img/1256248283443298310/HdGT-Hww?format=jpg&name=900x900',
+  'https://pbs.twimg.com/media/EZXJ93JXYAMzMzt?format=jpg&name=large'
 ];
 
 const tabs: Tab[] = [
