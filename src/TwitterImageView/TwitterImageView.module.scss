@@ -1,0 +1,25 @@
+@import './../App.module.scss';
+
+.modalBackground {
+  transition: none;
+  display: initial;
+  overflow: hidden;
+
+  .holder {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 101;
+    transition: margin-left 300ms ease-in-out;
+  }
+
+  .imageBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 999;
+  }
+}

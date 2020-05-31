@@ -1,0 +1,41 @@
+@import './../App.module.scss';
+.statusImage {
+  background-color: rgba(#000, 0.8);
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .view {
+    max-width: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .image {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 90%;
+    }
+  }
+
+  .loader {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgba(#000, 0.2);
+    margin-right: 2px;
+    .viewed, &.viewed {
+      background-color: white;
+      height: 100%;
+      border-radius: 4px;
+    }
+  }
+}

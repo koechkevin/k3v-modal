@@ -11,7 +11,7 @@
     }
   },
   "name": "k3v-modal",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -21,6 +21,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-transition-group": "^4.4.0",
+    "express": "^4.17.1",
     "k3v-modal": "0.1.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -57,17 +58,20 @@
       "last 1 safari version"
     ]
   },
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "@babel/plugin-transform-typescript": "^7.9.6",
+    "@types/express": "^4.17.6",
     "@types/glob": "^7.1.1",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-plugin-typescript-to-proptypes": "^1.3.2",
     "concurrently": "^5.2.0",
     "coverage": "^0.4.1",
     "coveralls": "^3.1.0",
+    "dotenv": "^8.2.0",
     "husky": "^4.2.5",
     "ts-node": "^8.10.1"
   }
