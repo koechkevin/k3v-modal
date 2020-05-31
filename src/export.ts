@@ -1,8 +1,7 @@
-import Modal from './Modal';
-import Drawer from './drawer/Drawer';
-import Header from './Header/Header';
-import Tabs from './Tabs';
-import TwitterImageView from './TwitterImageView/TwitterImageView';
-import WhatsappStatusView from './WhatsappStatusView/WhatsappStatusView';
+export { default as Modal } from './Modal';
+export { default as Drawer } from './drawer/Drawer';
+export { default as Header } from './Header/Header';
+export { default as Tabs } from './Tabs';
+export { default as TwitterImageView } from './TwitterImageView/TwitterImageView';
+export { default as WhatsappStatusView } from './WhatsappStatusView/WhatsappStatusView';
 
-export default { Modal, Drawer, Header, Tabs, TwitterImageView, WhatsappStatusView };

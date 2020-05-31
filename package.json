@@ -11,7 +11,7 @@
     }
   },
   "name": "k3v-modal",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -75,5 +75,15 @@
     "dotenv": "^8.2.0",
     "husky": "^4.2.5",
     "ts-node": "^8.10.1"
+  },
+  "homepage": "https://react-chat-form.firebaseapp.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koechkevin/k3v-modal"
+  },
+  "author": {
+    "name": "Kevin Koech",
+    "email": "koechkevin92@gmail.com",
+    "url": "https://github.com/koechkevin"
   }
 }

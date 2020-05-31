@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Props } from './WhatsappStatusView.interface';
+import Props from './WhatsappStatusView.interface';
 import classes from './WhatsappStatusView.module.scss';
 
 const WhatsappStatusView: FC<Props> = (props) => {

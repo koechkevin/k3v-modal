@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
-import { Props } from './TwitterImageView.interface';
+import Props from './TwitterImageView.interface';
 import classes from './TwitterImageView.module.scss';
 
 const TwitterImageView: FC<Props> = (props) => {

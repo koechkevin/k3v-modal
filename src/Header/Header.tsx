@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Props } from './Header.interface';
+import Props from './Header.interface';
 import classes from './header.module.scss';
 
 const Header: FC<Props> = (props) => {
