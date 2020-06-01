@@ -154,3 +154,41 @@
     border-right: none;
   }
 }
+
+
+.first {
+  border-color: transparent transparent transparent rgba(0,0,0, 0.7);
+  transform: rotate(30deg);
+}
+.second {
+  border-color: transparent transparent rgba(0,0,0, 0.7) transparent;
+}
+
+.third {
+  border-color: transparent rgba(0,0,0, 0.7) transparent transparent;
+  transform: rotate(-30deg);
+}
+
+// Playground
+.statusViewer {
+  display: flex;
+  position: relative;
+  :nth-child(n) {
+    border: 2px solid transparent;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  :nth-child(1) {
+    border-right-color: rgba(0,0,0, 0.7);
+    transform: rotate(-30deg);
+  }
+  :nth-child(2) {
+    border-bottom-color: rgba(0,0,0, 0.7);
+  }
+  :nth-child(3) {
+    border-left-color: rgba(0,0,0, 0.7);
+    transform: rotate(30deg);
+  }
+}

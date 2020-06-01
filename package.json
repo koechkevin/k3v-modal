@@ -11,7 +11,7 @@
     }
   },
   "name": "k3v-modal",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -22,7 +22,6 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-transition-group": "^4.4.0",
     "express": "^4.17.1",
-    "k3v-modal": "0.1.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -74,7 +73,8 @@
     "coverage": "^0.4.1",
     "coveralls": "^3.1.0",
     "dotenv": "^8.2.0",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "k3v-scripts": "^1.0.4"
   },
   "engines": {
     "node": "^10.x.x || 12.x.x",

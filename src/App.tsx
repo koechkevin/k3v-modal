@@ -6,6 +6,7 @@ import Drawer from './drawer/Drawer';
 import Header from './Header/Header';
 import TwitterImageView from './TwitterImageView/TwitterImageView';
 import WhatsappStatusView from './WhatsappStatusView/WhatsappStatusView';
+import MenuIcon from './MenuIcon/MenuIcon';
 
 const contents = [
   'https://pbs.twimg.com/media/EZVQ63ZXYAASwjG?format=jpg&name=large',
@@ -50,6 +51,7 @@ const App = () => {
   const [open, setOpen] = useState(false);
   const [drawer, setDrawerOpen] = useState(false);
   const [imageView, setImageView] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const active = window.location.hash.split('#');
   const hash = parseInt((active.length > 1 && active[1]) || '0', 10);
@@ -67,6 +69,15 @@ const App = () => {
         </button>
         <br />
         <code>{`<TwitterImageView contents={contents} />`}</code>
+      </div>
+    ),
+  };
+
+  const icons = {
+    title: 'Icons',
+    tab: (
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <MenuIcon open={clicked} onClick={() => setClicked(v => !v)} />
       </div>
     ),
   };
@@ -102,7 +113,7 @@ const App = () => {
                 }}
                 tabBarClassName={classes.tabBar}
                 activeTab={hash}
-                tabs={[...tabs, view]}
+                tabs={[...tabs, view, icons]}
               />
             </div>
           </div>

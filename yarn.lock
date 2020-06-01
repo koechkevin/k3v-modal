@@ -7603,25 +7603,10 @@ jsx-ast-utils@^2.2.3:
     array-includes "^3.1.1"
     object.assign "^4.1.0"
 
-k3v-modal@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/k3v-modal/-/k3v-modal-0.1.1.tgz#feaa735d7196e1b31fe41d70ae8bc6f2f73e24bb"
-  integrity sha512-ovvUztpwMX7K6DbqD5M3OofhPD5YGLDaTO/VLmp4FbLWkKo4iO8YnRxUsRkuLO79MmRRgNVj+gwieJumFMLmvg==
-  dependencies:
-    "@testing-library/jest-dom" "^4.2.4"
-    "@testing-library/react" "^9.3.2"
-    "@testing-library/user-event" "^7.1.2"
-    "@types/jest" "^24.0.0"
-    "@types/node" "^12.0.0"
-    "@types/react" "^16.9.0"
-    "@types/react-dom" "^16.9.0"
-    "@types/react-transition-group" "^4.4.0"
-    node-sass "^4.14.1"
-    react "^16.13.1"
-    react-dom "^16.13.1"
-    react-scripts "3.4.1"
-    react-transition-group "^4.4.1"
-    typescript "~3.7.2"
+k3v-scripts@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/k3v-scripts/-/k3v-scripts-1.0.4.tgz#c7d04262bcb0edb8f1b4003fae918d4d55922088"
+  integrity sha512-SbatZradtE44Izzi2nHG7fiXvEtvQzVbTPMq0zruYOyQYJkAwFyNtgSxFKfdl2RPOCC32wd7Hvm/qFD1bKvWGA==
 
 killable@^1.0.1:
   version "1.0.1"
