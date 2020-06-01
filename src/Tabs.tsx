@@ -12,18 +12,24 @@ interface Props {
   tabBarClassName?: string;
   activeTab?: number;
   style?: any;
+  onTabChange?: (index: number) => void;
 }
 
 const Tabs: FC<Props> = (props) => {
-  const { tabs, className, bodyClassName, tabBarClassName, activeTab, style } = props;
+  const { tabs, className, bodyClassName, tabBarClassName, activeTab, style, onTabChange } = props;
   const initialValue =  activeTab && (activeTab >= 0) && (activeTab < tabs.length) && activeTab;
   const [active, setActive] = useState(() => initialValue || 0);
+
+  const onSwitchTab = (index: number) => {
+    setActive(index);
+    onTabChange && onTabChange(index);
+  };
   return (
     <div style={{padding: 16,...style}} className={className}>
       <div className={[classes.head, tabBarClassName].join(' ')}>
         {tabs.map((tab: Tab, index) => (
           <button
-            onClick={() => setActive(index)}
+            onClick={() => onSwitchTab(index)}
             className={[classes.button, active === index ? classes.active : ''].join(' ')}
             key={index}
           >

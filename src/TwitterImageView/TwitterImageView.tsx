@@ -16,12 +16,15 @@ const TwitterImageView: FC<Props> = (props) => {
   };
 
   const onClickOutside = (e: { target: any }) => {
+    let isImage = false;
     bodyRef.forEach((ref: HTMLImageElement) => {
-      if (e.target.contains(ref)) {
-        onClose();
-        return;
+      if (e.target === ref) {
+        isImage = true;
       }
     });
+    if (!isImage) {
+      onClose();
+    }
   };
 
   useEffect(() => {

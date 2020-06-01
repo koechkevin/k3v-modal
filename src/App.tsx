@@ -7,11 +7,10 @@ import Header from './Header/Header';
 import TwitterImageView from './TwitterImageView/TwitterImageView';
 import WhatsappStatusView from './WhatsappStatusView/WhatsappStatusView';
 
-
 const contents = [
   'https://pbs.twimg.com/media/EZVQ63ZXYAASwjG?format=jpg&name=large',
   'https://pbs.twimg.com/semantic_core_img/1256248283443298310/HdGT-Hww?format=jpg&name=900x900',
-  'https://pbs.twimg.com/media/EZXJ93JXYAMzMzt?format=jpg&name=large'
+  'https://pbs.twimg.com/media/EZXJ93JXYAMzMzt?format=jpg&name=large',
 ];
 
 const tabs: Tab[] = [
@@ -36,9 +35,14 @@ const tabs: Tab[] = [
   {
     title: 'Drawer',
     tab: <code>{`<Drawer open={drawer} onOpenChange={setDrawerOpen} />`}</code>,
-  },{
+  },
+  {
     title: 'WhatsApp Status',
-    tab: <div style={{ height: 600 }}><WhatsappStatusView content={contents}/></div>
+    tab: (
+      <div style={{ height: 600 }}>
+        <WhatsappStatusView content={contents} />
+      </div>
+    ),
   },
 ];
 
@@ -46,12 +50,16 @@ const App = () => {
   const [open, setOpen] = useState(false);
   const [drawer, setDrawerOpen] = useState(false);
   const [imageView, setImageView] = useState(false);
+
+  const active = window.location.hash.split('#');
+  const hash = parseInt((active.length > 1 && active[1]) || '0', 10);
+
   const view = {
     title: 'Image View',
     tab: (
       <div>
         <button
-          style={{ marginRight: 16, width: '100%' }}
+          style={{ marginRight: 16, width: '100%', marginBottom: 32 }}
           className={classes.button}
           onClick={() => setImageView(true)}
         >
@@ -88,7 +96,14 @@ const App = () => {
                   Modal
                 </button>
               </div>
-              <Tabs tabBarClassName={classes.tabBar} activeTab={3} tabs={[...tabs, view]} />
+              <Tabs
+                onTabChange={(index) => {
+                  window.location.hash = `${index}`;
+                }}
+                tabBarClassName={classes.tabBar}
+                activeTab={hash}
+                tabs={[...tabs, view]}
+              />
             </div>
           </div>
         </div>
